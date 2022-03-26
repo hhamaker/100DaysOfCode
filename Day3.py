@@ -146,12 +146,12 @@ else:
 
 #Treasure Island
 print("Welcome to treasure Island. Your mission is to find the treasure")
-direction = input("There are two paths... Would you like to go left of right?")
+direction = input("There are two paths... Would you like to go left of right?").lower
 
 if direction == "left":
-    action = input("you come across a river, do you want to swim, or wait?")
+    action = input("you come across a river, do you want to swim, or wait?").lower
     if action == "wait":
-        door = input("a house magically appears with 3 doors. Red, Blue, and Yellow. which door would you like to enter?")
+        door = input("a house magically appears with 3 doors. Red, Blue, and Yellow. which door would you like to enter?").lower
         if door == "Red":
             print("Burned by fire. Game over")
         elif door == "Blue":
